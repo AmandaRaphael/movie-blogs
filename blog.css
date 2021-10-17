@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("./movieblogpics/pngtree-blue-movie-film-texture-background-image_321897.jpg");
+    background-size:cover;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+/* navBar */
+nav {
+    background-color: black;
+    height:70px;
+	position: sticky;
+	top: 0;
+    list-style-type: none;
+    z-index:4;
+}
+li{
+    display: inline-block;
+    list-style-type:none;
+    padding:10px;
+    padding-top:20px;
+    font-size:x-large;
+    color: white;
+}
+
+li a{
+    text-decoration: none;
+    color: inherit;
+    padding:20px;
+}
+
+.fas,.far{
+    color: inherit;
+}
+
+/* Because of adding all the selectors here, the hover effect gets lost. Ideally will be 
+    only li:hover as it will make the whole li background crimson and not only the anchor*/
+li:hover{
+    color: yellow;
+    background-color: crimson;
+}
+/* li:hover a {
+    color: yellow;
+}
+li:hover a i{
+    color: yellow;
+} */
+
+
+/* li:focus a, li:active .fas, li:active .far{
+    background-color: darkslateblue;
+} */
+/* cards */
+.container{
+    background-color:rgba(238, 207, 150,0.4);
+    width:1000px;
+    margin-left:300px;
+    padding:70px;
+}
+
+.gallery1 div img,.gallery1 div p,.gallery2 div img,.gallery2 div p{
+width:200px;
+height:150px;
+color:white
+}
+.card{
+    padding:20px;
+    background-color: black;
+    width:250px;
+    margin:20px;
+    height:300px;
+    border-radius: 15px 55px;
+    display:inline-block;
+}
+.card:hover{
+    height:310px;
+  background-color: rgba(189, 27, 59,0.8);
+}
+h3{
+    color:white;
+}
+h1{
+    color: white;
+    text-align:center ;
+    text-transform: uppercase;
+}
+h2{
+    font-family: 'Allison', cursive;
+    font-size:100px;
+    text-align:center;
+    letter-spacing: 5px;
+    color: turquoise;
+}
+.fa-heartbeat{
+color: red;
+}
+
+h1+p{
+    font-size:x-large;
+    font-weight: bold;
+    color:white;
+    line-height:30px;
+}
+
+.card a{
+    text-decoration-line: none;
+    color:darkkhaki
+}
+.scrollingContact{
+	position: sticky;
+	top: 150px;}
+    
+.scrollingContact  a, .scrollingContact .far{
+    font-size: xx-large;
+    float:right;
+}
+
+/* Active class */
+
+/* li a:hover:not(.active) {
+    background-color: #111;
+} */
+  
+  /* .active {
+    background-color: #04AA6D;
+  } */
+
+/* About me */
+.aboutMeHead{
+    margin:20px;
+}
+  .containerImg{
+      position:relative;
+      background-color: rgba(241, 191, 26, 0.3);
+      width:1000px;
+      height:600px;
+    margin-left:300px;
+    padding:200px;
+  }
+  .img1 img{
+      width:950px;
+      position:absolute;
+      top:200px;
+      left:250px;
+      z-index:0;
+  }
+  .img2 img{
+    width:400px;
+    height:300px;
+    position:absolute;
+    top:600px;
+    right:190px;
+    z-index:2;
+}
+  .img3 img{
+    width:450px;
+    height:220px;
+    position:absolute;
+left:20px;
+top:400px;
+    z-index:2;
+}
+.img4 img{
+    position: absolute;
+    z-index:3;
+    width:300px;
+    height:200px;
+    top:140px;
+    right:300px;
+}
+/* Contact page */
+.info{
+    background-color: rgba(0, 255, 76,0.5);
+    height: 70px;
+    margin:15px;
+    padding-bottom:20px;
+    padding-top:2px;
+}
+.info li{
+    margin:10px;
+    padding-top:10px;
+    list-style-type: none;
+}
+.info+div{
+    margin:15px;
+    
+}
+.info +div a{
+    text-decoration: none;
+    font-size: larger;
+    color:fuchsia
+}
+
+.info li:hover{
+    background-color: fuchsia;
+    height:30px;
+}
+
+
+/* In general good work, you used all the css we have learned and got a result very similar to the 
+    requested. You made a good use of classes which is good to start practicing now. 
+    Some recommendations: 
+    1. There is no need to add many hover pseudo class for the same "element". Each option in the navbar
+    is composed by a li and anchor, ther is no need to add the hover to all of them, normally add hover only
+    to the li as it enclose the other elements and is enough. Of course everything depends on the design
+    but you can follow that normally the hover effect goes to the element that enclose the other ones.
+    2. For the cards, it would be better to not give more in height and width, you made it really exact to the point
+    it was overflowing in some cards and the margin/padding only made it less uniform. Keep in mind
+    the dimensions that you are assigning so the parent element can contain the children elements without problems.
+    3. Remember to reset the properties at the beggining of the file.        
+*/
